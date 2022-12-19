@@ -7,12 +7,41 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textGoesHere"
+        android:text="Top BBC News Stories:"
+        <!--app:layout_constraintBottom_toBottomOf="parent"
+        //app:layout_constraintEnd_toEndOf="parent"
+        //app:layout_constraintStart_toStartOf="parent"
+        //app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ListView
+        android:id="@+id/theListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_width="match_parent"
+        tools:layout_height="match_parent" >
+
+
+    </ListView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Add this to your list of top stories?" />
+
+ <!--   <Test>
+        <AMessage message="Hello world"/>
+        <AMessage message="Parser passes this information"/>
+        <Weather outlook="sunny" windy="false"/>
+        <Temperature>20</Temperature>
+    </Test>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
